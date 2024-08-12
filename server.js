@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
 // Connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/userDB').then(() => console.log("Connected to MongoDb")).catch((err) => console.log(err));
+mongoose.connect('mongodb+srv://jainrohit0002:qwert12345@cluster0.hpx1zq5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/userDB').then(() => console.log("Connected to MongoDb")).catch((err) => console.log(err));
 
 // Define User Schema
 const userSchema = new mongoose.Schema({
